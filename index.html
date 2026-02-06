@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>redirect</title>
+</head>
+
+<body>
+<script>
+//上面的不要碰
+
+
+var urls = ['https://forms.gle/Tr6jirArmFQQi5g97',
+'https://www.youtube.com/watch?v=tj8TgGP1XX8&list=RDtj8TgGP1XX8&start_radio=1',
+'https://www.google.com/webhp?tab=rw'];
+
+//下面的不要碰
+var min = 0;
+var max = urls.length - 1;
+if(max==0){
+ window.location.href='https://www.google.com.tw';
+ }
+else{
+ var random = Math.floor(Math.random() * (max - min + 1)) + min;
+ window.location.href=urls[random];
+ }
+</script>
+</body>
+</html>
